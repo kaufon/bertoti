@@ -1,0 +1,14 @@
+version: "3.9"  # Optional: choose your version based on the features you need
+
+services:
+  app:
+    build: .
+    container_name: fastapi-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app  # Mounts your code inside the container for easy updates
+    environment:
+      - PYTHONUNBUFFERED=1  # Ensures logs are visible in the terminal
+    restart: unless-stopped
+
