@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 8000
 
 # Comando para iniciar o FastAPI com uvicorn
-CMD ["uvicorn", "src.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["adk", "web" , "src/"]
