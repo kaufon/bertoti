@@ -3,7 +3,7 @@ from textwrap import dedent
 from google.adk.agents import Agent
 
 root_agent = Agent(
-    model="gemini-2.0-flash-001",
+    model="gemini-2.0-flash",
     name="calorie_calculator_agent",
     description=dedent("""
             An expert chef able to calculate the calories of a recipe based on its photograph.
